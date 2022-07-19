@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>01-数据库的基础知识 | 吃惊夜夜</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="吃惊夜夜的小港湾">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.c4086290.js" as="script"><link rel="preload" href="/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/assets/js/76.1dbfdb6a.js" as="script"><link rel="prefetch" href="/assets/js/10.8eebcbe5.js"><link rel="prefetch" href="/assets/js/11.e4d5d580.js"><link rel="prefetch" href="/assets/js/12.84d7b649.js"><link rel="prefetch" href="/assets/js/13.8ca97571.js"><link rel="prefetch" href="/assets/js/14.3c626919.js"><link rel="prefetch" href="/assets/js/15.1f35bfee.js"><link rel="prefetch" href="/assets/js/16.0e469adb.js"><link rel="prefetch" href="/assets/js/17.491efd1f.js"><link rel="prefetch" href="/assets/js/18.39eb943a.js"><link rel="prefetch" href="/assets/js/19.36fc650b.js"><link rel="prefetch" href="/assets/js/20.6f167d3b.js"><link rel="prefetch" href="/assets/js/21.a301ec28.js"><link rel="prefetch" href="/assets/js/22.d5fa3bea.js"><link rel="prefetch" href="/assets/js/23.78544147.js"><link rel="prefetch" href="/assets/js/24.318455c7.js"><link rel="prefetch" href="/assets/js/25.1254b648.js"><link rel="prefetch" href="/assets/js/26.c9759a22.js"><link rel="prefetch" href="/assets/js/27.ba0323c7.js"><link rel="prefetch" href="/assets/js/28.85d5ddc5.js"><link rel="prefetch" href="/assets/js/29.c28730b9.js"><link rel="prefetch" href="/assets/js/3.e1f57491.js"><link rel="prefetch" href="/assets/js/30.69e1fc08.js"><link rel="prefetch" href="/assets/js/31.c09e243f.js"><link rel="prefetch" href="/assets/js/32.d4e07804.js"><link rel="prefetch" href="/assets/js/33.76ab3d09.js"><link rel="prefetch" href="/assets/js/34.2ad4e756.js"><link rel="prefetch" href="/assets/js/35.24a5a2bb.js"><link rel="prefetch" href="/assets/js/36.4b92c73f.js"><link rel="prefetch" href="/assets/js/37.dc88bc6c.js"><link rel="prefetch" href="/assets/js/38.b217e74d.js"><link rel="prefetch" href="/assets/js/39.b988ca7d.js"><link rel="prefetch" href="/assets/js/4.26f73e91.js"><link rel="prefetch" href="/assets/js/40.4c0db7a4.js"><link rel="prefetch" href="/assets/js/41.ef5ee8cc.js"><link rel="prefetch" href="/assets/js/42.408c3886.js"><link rel="prefetch" href="/assets/js/43.4b5d4c62.js"><link rel="prefetch" href="/assets/js/44.2df9f6c6.js"><link rel="prefetch" href="/assets/js/45.6dce77a2.js"><link rel="prefetch" href="/assets/js/46.28e3d709.js"><link rel="prefetch" href="/assets/js/47.af83327e.js"><link rel="prefetch" href="/assets/js/48.c9c0fc61.js"><link rel="prefetch" href="/assets/js/49.f7ef8fc9.js"><link rel="prefetch" href="/assets/js/5.5dcec586.js"><link rel="prefetch" href="/assets/js/50.97752fef.js"><link rel="prefetch" href="/assets/js/51.1b9db6ce.js"><link rel="prefetch" href="/assets/js/52.a59ef98b.js"><link rel="prefetch" href="/assets/js/53.09ab1597.js"><link rel="prefetch" href="/assets/js/54.00eef295.js"><link rel="prefetch" href="/assets/js/55.0b8b6e82.js"><link rel="prefetch" href="/assets/js/56.05bff832.js"><link rel="prefetch" href="/assets/js/57.7f919fc7.js"><link rel="prefetch" href="/assets/js/58.e47ba765.js"><link rel="prefetch" href="/assets/js/59.f9c7c829.js"><link rel="prefetch" href="/assets/js/6.f2a96706.js"><link rel="prefetch" href="/assets/js/60.b4dab731.js"><link rel="prefetch" href="/assets/js/61.40cd948a.js"><link rel="prefetch" href="/assets/js/62.373deb93.js"><link rel="prefetch" href="/assets/js/63.730ad74d.js"><link rel="prefetch" href="/assets/js/64.3fdaadf6.js"><link rel="prefetch" href="/assets/js/65.8038e113.js"><link rel="prefetch" href="/assets/js/66.19d75172.js"><link rel="prefetch" href="/assets/js/67.9bce3722.js"><link rel="prefetch" href="/assets/js/68.e5053f7b.js"><link rel="prefetch" href="/assets/js/69.f81c663c.js"><link rel="prefetch" href="/assets/js/7.cafa4535.js"><link rel="prefetch" href="/assets/js/70.1808d9cb.js"><link rel="prefetch" href="/assets/js/71.afdd038b.js"><link rel="prefetch" href="/assets/js/72.fc9f8798.js"><link rel="prefetch" href="/assets/js/73.9456b4f3.js"><link rel="prefetch" href="/assets/js/74.9c68730a.js"><link rel="prefetch" href="/assets/js/75.62bd11e4.js"><link rel="prefetch" href="/assets/js/77.7c2c5aac.js"><link rel="prefetch" href="/assets/js/78.f6267da3.js"><link rel="prefetch" href="/assets/js/79.2d1c0f08.js"><link rel="prefetch" href="/assets/js/8.0fd24d01.js"><link rel="prefetch" href="/assets/js/80.f0ee681b.js"><link rel="prefetch" href="/assets/js/9.c10878f4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">吃惊夜夜</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端技术" class="dropdown-title"><span class="title">前端技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端技术" class="mobile-dropdown-title"><span class="title">前端技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/language/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/language/vue/" class="nav-link router-link-active">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown语法
+</a></li></ul></div></div><div class="nav-item"><a href="/javascript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/language/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="https://github.com/chijingyeye" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端技术" class="dropdown-title"><span class="title">前端技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端技术" class="mobile-dropdown-title"><span class="title">前端技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/language/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/language/vue/" class="nav-link router-link-active">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown语法
+</a></li></ul></div></div><div class="nav-item"><a href="/javascript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/language/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="https://github.com/chijingyeye" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/language/vue/" aria-current="page" class="sidebar-link">01-Vue的介绍和vue-cli</a></li><li><a href="/language/vue/02-vue.html" class="sidebar-link">02-Vue的系统指令</a></li><li><a href="/language/vue/03-vue.html" class="sidebar-link">03-v-on的事件修饰符</a></li><li><a href="/language/vue/04-vue.html" class="sidebar-link">03-v-on的事件修饰符</a></li><li><a href="/language/vue/05-vue.html" class="sidebar-link">05-Vue的举例：列表功能</a></li><li><a href="/language/vue/06-vue.html" class="sidebar-link">06-自定义过滤器：时间格式化举例</a></li><li><a href="/language/vue/07-vue.html" class="sidebar-link">07-自定义按键修饰符&amp;自定义指令</a></li><li><a href="/language/vue/08-vue.html" class="sidebar-link">08-Vue实例的生命周期函数</a></li><li><a href="/language/vue/09-vue.html" class="sidebar-link">09-Vue中的Ajax请求</a></li><li><a href="/language/vue/10-vue.html" class="sidebar-link">10-Vue动画</a></li><li><a href="/language/vue/11-vue.html" class="sidebar-link">11-Vue组件的定义和注册</a></li><li><a href="/language/vue/12-vue.html" class="sidebar-link">12-Vue组件之间的传值</a></li><li><a href="/language/vue/13-vue.html" class="sidebar-link">13-Vue-router路由</a></li><li><a href="/language/vue/14-vue.html" aria-current="page" class="active sidebar-link">01-数据库的基础知识</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/language/vue/15-vue.html" class="sidebar-link">01-数据库的基础知识</a></li><li><a href="/language/vue/16-vue.html" class="sidebar-link">01-数据库的基础知识</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_001、对象的赋值"><a href="#_001、对象的赋值" class="header-anchor">#</a> 001、对象的赋值</h3> <p>（1）在 store 中定义一个对象：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>    <span class="token literal-property property">userInfo</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">pin</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">nickName</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">avatarUrl</span><span class="token operator">:</span> <span class="token constant">DEFAULT_AVATAR</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">definePin</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">isbind</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>（2）从接口拿到数据后，给这个对象赋值：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">this</span><span class="token punctuation">.</span>userInfo <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>userInfo<span class="token punctuation">,</span>
+  <span class="token literal-property property">pin</span><span class="token operator">:</span> res<span class="token punctuation">.</span>base<span class="token punctuation">.</span>curPin<span class="token punctuation">,</span>
+  <span class="token literal-property property">nickName</span><span class="token operator">:</span> res<span class="token punctuation">.</span>base<span class="token punctuation">.</span>nickname<span class="token punctuation">,</span>
+  <span class="token literal-property property">avatarUrl</span><span class="token operator">:</span> res<span class="token punctuation">.</span>base<span class="token punctuation">.</span>headImageUrl <span class="token operator">?</span> res<span class="token punctuation">.</span>base<span class="token punctuation">.</span>headImageUrl <span class="token operator">:</span> <span class="token constant">DEFAULT_AVATAR</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">definePin</span><span class="token operator">:</span> res<span class="token punctuation">.</span>definePin<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/language/vue/13-vue.html" class="prev">
+        13-Vue-router路由
+      </a></span> <span class="next"><a href="/language/vue/15-vue.html">
+        01-数据库的基础知识
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c4086290.js" defer></script><script src="/assets/js/2.2defd20b.js" defer></script><script src="/assets/js/76.1dbfdb6a.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>37-scroll相关属性和缓动动画 | 吃惊夜夜</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="吃惊夜夜的小港湾">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.c4086290.js" as="script"><link rel="preload" href="/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/assets/js/46.28e3d709.js" as="script"><link rel="prefetch" href="/assets/js/10.8eebcbe5.js"><link rel="prefetch" href="/assets/js/11.e4d5d580.js"><link rel="prefetch" href="/assets/js/12.84d7b649.js"><link rel="prefetch" href="/assets/js/13.8ca97571.js"><link rel="prefetch" href="/assets/js/14.3c626919.js"><link rel="prefetch" href="/assets/js/15.1f35bfee.js"><link rel="prefetch" href="/assets/js/16.0e469adb.js"><link rel="prefetch" href="/assets/js/17.491efd1f.js"><link rel="prefetch" href="/assets/js/18.39eb943a.js"><link rel="prefetch" href="/assets/js/19.36fc650b.js"><link rel="prefetch" href="/assets/js/20.6f167d3b.js"><link rel="prefetch" href="/assets/js/21.a301ec28.js"><link rel="prefetch" href="/assets/js/22.d5fa3bea.js"><link rel="prefetch" href="/assets/js/23.78544147.js"><link rel="prefetch" href="/assets/js/24.318455c7.js"><link rel="prefetch" href="/assets/js/25.1254b648.js"><link rel="prefetch" href="/assets/js/26.c9759a22.js"><link rel="prefetch" href="/assets/js/27.ba0323c7.js"><link rel="prefetch" href="/assets/js/28.85d5ddc5.js"><link rel="prefetch" href="/assets/js/29.c28730b9.js"><link rel="prefetch" href="/assets/js/3.e1f57491.js"><link rel="prefetch" href="/assets/js/30.69e1fc08.js"><link rel="prefetch" href="/assets/js/31.c09e243f.js"><link rel="prefetch" href="/assets/js/32.d4e07804.js"><link rel="prefetch" href="/assets/js/33.76ab3d09.js"><link rel="prefetch" href="/assets/js/34.2ad4e756.js"><link rel="prefetch" href="/assets/js/35.24a5a2bb.js"><link rel="prefetch" href="/assets/js/36.4b92c73f.js"><link rel="prefetch" href="/assets/js/37.dc88bc6c.js"><link rel="prefetch" href="/assets/js/38.b217e74d.js"><link rel="prefetch" href="/assets/js/39.b988ca7d.js"><link rel="prefetch" href="/assets/js/4.26f73e91.js"><link rel="prefetch" href="/assets/js/40.4c0db7a4.js"><link rel="prefetch" href="/assets/js/41.ef5ee8cc.js"><link rel="prefetch" href="/assets/js/42.408c3886.js"><link rel="prefetch" href="/assets/js/43.4b5d4c62.js"><link rel="prefetch" href="/assets/js/44.2df9f6c6.js"><link rel="prefetch" href="/assets/js/45.6dce77a2.js"><link rel="prefetch" href="/assets/js/47.af83327e.js"><link rel="prefetch" href="/assets/js/48.c9c0fc61.js"><link rel="prefetch" href="/assets/js/49.f7ef8fc9.js"><link rel="prefetch" href="/assets/js/5.5dcec586.js"><link rel="prefetch" href="/assets/js/50.97752fef.js"><link rel="prefetch" href="/assets/js/51.1b9db6ce.js"><link rel="prefetch" href="/assets/js/52.a59ef98b.js"><link rel="prefetch" href="/assets/js/53.09ab1597.js"><link rel="prefetch" href="/assets/js/54.00eef295.js"><link rel="prefetch" href="/assets/js/55.0b8b6e82.js"><link rel="prefetch" href="/assets/js/56.05bff832.js"><link rel="prefetch" href="/assets/js/57.7f919fc7.js"><link rel="prefetch" href="/assets/js/58.e47ba765.js"><link rel="prefetch" href="/assets/js/59.f9c7c829.js"><link rel="prefetch" href="/assets/js/6.f2a96706.js"><link rel="prefetch" href="/assets/js/60.b4dab731.js"><link rel="prefetch" href="/assets/js/61.40cd948a.js"><link rel="prefetch" href="/assets/js/62.373deb93.js"><link rel="prefetch" href="/assets/js/63.730ad74d.js"><link rel="prefetch" href="/assets/js/64.3fdaadf6.js"><link rel="prefetch" href="/assets/js/65.8038e113.js"><link rel="prefetch" href="/assets/js/66.19d75172.js"><link rel="prefetch" href="/assets/js/67.9bce3722.js"><link rel="prefetch" href="/assets/js/68.e5053f7b.js"><link rel="prefetch" href="/assets/js/69.f81c663c.js"><link rel="prefetch" href="/assets/js/7.cafa4535.js"><link rel="prefetch" href="/assets/js/70.1808d9cb.js"><link rel="prefetch" href="/assets/js/71.afdd038b.js"><link rel="prefetch" href="/assets/js/72.fc9f8798.js"><link rel="prefetch" href="/assets/js/73.9456b4f3.js"><link rel="prefetch" href="/assets/js/74.9c68730a.js"><link rel="prefetch" href="/assets/js/75.62bd11e4.js"><link rel="prefetch" href="/assets/js/76.1dbfdb6a.js"><link rel="prefetch" href="/assets/js/77.7c2c5aac.js"><link rel="prefetch" href="/assets/js/78.f6267da3.js"><link rel="prefetch" href="/assets/js/79.2d1c0f08.js"><link rel="prefetch" href="/assets/js/8.0fd24d01.js"><link rel="prefetch" href="/assets/js/80.f0ee681b.js"><link rel="prefetch" href="/assets/js/9.c10878f4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">吃惊夜夜</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端技术" class="dropdown-title"><span class="title">前端技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端技术" class="mobile-dropdown-title"><span class="title">前端技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/language/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/language/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown语法
+</a></li></ul></div></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></div><div class="nav-item"><a href="/language/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="https://github.com/chijingyeye" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端技术" class="dropdown-title"><span class="title">前端技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端技术" class="mobile-dropdown-title"><span class="title">前端技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/language/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/language/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown语法
+</a></li></ul></div></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></div><div class="nav-item"><a href="/language/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="https://github.com/chijingyeye" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/javascript/" aria-current="page" class="sidebar-link">01-JavaScript简介</a></li><li><a href="/javascript/02-helloWorld.html" class="sidebar-link">02-开始写JavaScript：hello world</a></li><li><a href="/javascript/03-javascript.html" class="sidebar-link">03-常量和变量</a></li><li><a href="/javascript/04-javascript.html" class="sidebar-link">04-标识符、关键字、保留字</a></li><li><a href="/javascript/05-javascript.html" class="sidebar-link">05-变量的数据类型：基本数据类型和引用数据类型</a></li><li><a href="/javascript/06-javascript.html" class="sidebar-link">06-基本数据类型：String 和 Boolean</a></li><li><a href="/javascript/07-javascript.html" class="sidebar-link">07-基本数据类型：Number</a></li><li><a href="/javascript/08-javascript.html" class="sidebar-link">08-基本数据类型：Null 和 Undefined</a></li><li><a href="/javascript/09-javascript.html" class="sidebar-link">09-数据类型转换</a></li><li><a href="/javascript/10-javascript.html" class="sidebar-link">10-运算符</a></li><li><a href="/javascript/11-javascript.html" class="sidebar-link">11-流程控制语句：选择结构（if和switch）</a></li><li><a href="/javascript/12-javascript.html" class="sidebar-link">12-流程控制语句：循环结构（for和while）</a></li><li><a href="/javascript/13-javascript.html" class="sidebar-link">13-对象简介</a></li><li><a href="/javascript/14-javascript.html" class="sidebar-link">14-基本包装类型</a></li><li><a href="/javascript/15-javascript.html" class="sidebar-link">15-内置对象 String：字符串的常见方法</a></li><li><a href="/javascript/16-javascript.html" class="sidebar-link">16-内置对象：Number和Math</a></li><li><a href="/javascript/17-javascript.html" class="sidebar-link">17-内置对象：Date</a></li><li><a href="/javascript/18-javascript.html" class="sidebar-link">18-数组简介</a></li><li><a href="/javascript/19-javascript.html" class="sidebar-link">19-数组的常见方法</a></li><li><a href="/javascript/20-javascript.html" class="sidebar-link">20-函数</a></li><li><a href="/javascript/21-javascript.html" class="sidebar-link">21-作用域和变量提升</a></li><li><a href="/javascript/22-javascript.html" class="sidebar-link">22-预编译</a></li><li><a href="/javascript/23-javascript.html" class="sidebar-link">23-this指向</a></li><li><a href="/javascript/24-javascript.html" class="sidebar-link">24-call、apply 和 bind</a></li><li><a href="/javascript/25-javascript.html" class="sidebar-link">25-高阶函数</a></li><li><a href="/javascript/26-javascript.html" class="sidebar-link">26-闭包</a></li><li><a href="/javascript/27-javascript.html" class="sidebar-link">27-面向对象概述</a></li><li><a href="/javascript/28-javascript.html" class="sidebar-link">28-对象的创建&amp;构造函数</a></li><li><a href="/javascript/29-javascript.html" class="sidebar-link">29-对象的基本操作</a></li><li><a href="/javascript/30-javascript.html" class="sidebar-link">30-浅拷贝和深拷贝</a></li><li><a href="/javascript/31_1-javascript.html" class="sidebar-link">31_1-对象的高级操作（待更新）</a></li><li><a href="/javascript/31_2-javascript.html" class="sidebar-link">31_2-原型链和原型继承（待更新）</a></li><li><a href="/javascript/31_3-javascript.html" class="sidebar-link">31_3-类和构造继承（待更新）</a></li><li><a href="/javascript/32-javascript.html" class="sidebar-link">32-正则表达式</a></li><li><a href="/javascript/33-javascript.html" class="sidebar-link">33-事件简介</a></li><li><a href="/javascript/34-javascript.html" class="sidebar-link">34-DOM简介和DOM操作</a></li><li><a href="/javascript/35-javascript.html" class="sidebar-link">35-通过style对象获取和设置行内样式</a></li><li><a href="/javascript/36-javascript.html" class="sidebar-link">36-offset相关属性和匀速动画（含轮播图的实现）</a></li><li><a href="/javascript/37-javascript.html" aria-current="page" class="active sidebar-link">37-scroll相关属性和缓动动画</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/37-javascript.html#scroll-相关属性" class="sidebar-link">scroll 相关属性</a></li><li class="sidebar-sub-header"><a href="/javascript/37-javascript.html#获取-html-文档的方法" class="sidebar-link">获取 html 文档的方法</a></li><li class="sidebar-sub-header"><a href="/javascript/37-javascript.html#scrolltop-举例-固定导航栏" class="sidebar-link">scrollTop 举例：固定导航栏</a></li><li class="sidebar-sub-header"><a href="/javascript/37-javascript.html#缓动动画" class="sidebar-link">缓动动画</a></li><li class="sidebar-sub-header"><a href="/javascript/37-javascript.html#window-scrollto-方法举例-返回到顶部小火箭" class="sidebar-link">window.scrollTo()方法举例：返回到顶部小火箭</a></li></ul></li><li><a href="/javascript/38-javascript.html" class="sidebar-link">38-client（可视区）相关属性</a></li><li><a href="/javascript/39-javascript.html" class="sidebar-link">39-事件的绑定和事件对象Event</a></li><li><a href="/javascript/40-javascript.html" class="sidebar-link">40-事件的传播和事件冒泡</a></li><li><a href="/javascript/41-javascript.html" class="sidebar-link">41-事件委托</a></li><li><a href="/javascript/42-javascript.html" class="sidebar-link">42-键盘事件</a></li><li><a href="/javascript/43-javascript.html" class="sidebar-link">43-BOM简介和navigator.userAgent&amp;History&amp;Location</a></li><li><a href="/javascript/44-javascript.html" class="sidebar-link">44-定时器</a></li><li><a href="/javascript/45-javascript.html" class="sidebar-link">45-jQuery的介绍和选择器</a></li><li><a href="/javascript/46-javascript.html" class="sidebar-link">46-jQuery动画详解</a></li><li><a href="/javascript/47-javascript.html" class="sidebar-link">47-jQuery操作DOM</a></li><li><a href="/javascript/48-javascript.html" class="sidebar-link">48-jQuery的事件机制和其他知识</a></li><li><a href="/javascript/49-javascript.html" class="sidebar-link">49-Zepto入门</a></li><li><a href="/javascript/50-javascript.html" class="sidebar-link">BOM的常见内置方法和内置对象</a></li><li><a href="/javascript/51-javascript.html" class="sidebar-link">常见代码解读</a></li><li><a href="/javascript/52-javascript.html" class="sidebar-link">原型对象</a></li><li><a href="/javascript/53-javascript.html" class="sidebar-link">原型链</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><ArticleTopAd></ArticleTopAd> <h2 id="scroll-相关属性"><a href="#scroll-相关属性" class="header-anchor">#</a> scroll 相关属性</h2> <h3 id="window-onscroll-方法"><a href="#window-onscroll-方法" class="header-anchor">#</a> window.onscroll() 方法</h3> <p>当我们用鼠标滚轮，滚动网页的时候，会触发 window.onscroll() 方法。效果如下：（注意看控制台的打印结果）</p> <p><img src="http://img.smyhvae.com/20180202_2258.gif" alt=""></p> <p>如果你需要做滚动监听，可以使用这个方法。</p> <p>我们来看看和 scroll 相关的有哪些属性。</p> <h3 id="_1、scrollwidth-和-scrollheight"><a href="#_1、scrollwidth-和-scrollheight" class="header-anchor">#</a> 1、ScrollWidth 和 scrollHeight</h3> <p><code>ScrollWidth</code> 和 <code>scrollHeight</code>：获取元素<strong>整个滚动区域</strong>的宽、高。包括 width 和 padding，不包括 border 和 margin。</p> <p><strong>注意</strong>：</p> <p><code>scrollHeight</code> 的特点是：如果内容超出了盒子，<code>scrollHeight</code>为内容的高（包括超出的内容）；如果不超出，<code>scrollHeight</code>为盒子本身的高度。<code>ScrollWidth</code>同理。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+      <span class="token selector">div</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+        <span class="token property">border</span><span class="token punctuation">:</span> 8px solid red<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      静，能寒窗苦守；动，能点石成金。 静，能寒窗苦守；动，能点石成金。
+      静，能寒窗苦守；动，能点石成金。 静，能寒窗苦守；动，能点石成金。
+      静，能寒窗苦守；动，能点石成金。 静，能寒窗苦守；动，能点石成金。
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      <span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">&quot;div&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// `scrollHeight` 的特点是：如果内容超出了盒子，`scrollHeight`为内容的高（包括超出的内容）；如果不超出，`scrollHeight`为盒子本身的高度。</span>
+      <span class="token comment">//IE8以下（不包括IE8），为盒子本身内容的高度。</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>div<span class="token punctuation">.</span>scrollWidth<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>div<span class="token punctuation">.</span>scrollHeight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>打印结果：</p> <p><img src="http://img.smyhvae.com/20180203_1235.png" alt=""></p> <h3 id="_2、scrolltop-和-scrollleft"><a href="#_2、scrolltop-和-scrollleft" class="header-anchor">#</a> 2、scrollTop 和 scrollLeft</h3> <ul><li><p><code>scrollLeft</code>：获取水平滚动条滚动的距离。</p></li> <li><p><code>scrollTop</code>：获取垂直滚动条滚动的距离。</p></li></ul> <p><strong>实战经验</strong>：</p> <p>当某个元素满足<code>scrollHeight - scrollTop == clientHeight</code>时，说明垂直滚动条滚动到底了。</p> <p>当某个元素满足<code>scrollWidth - scrollLeft == clientWidth</code>时，说明水平滚动条滚动到底了。</p> <p>这个实战经验非常有用，可以用来判断用户是否已经将内容滑动到底了。比如说，有些场景下，希望用户能够看完“长长的活动规则”，才允许触发接下来的表单操作。</p> <h3 id="scrolltop-的兼容性"><a href="#scrolltop-的兼容性" class="header-anchor">#</a> scrollTop 的兼容性</h3> <p>如果要获取页面滚动的距离，scrollTop 这个属性的写法要注意兼容性，如下。</p> <p>（1）如果文档没有 DTD 声明，写法为：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
+</code></pre></div><p>在没有 DTD 声明的情况下，要求是这种写法，chrome 浏览器才能认出来。</p> <p>（2）如果文档有 DTD 声明，写法为：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
+</code></pre></div><p>在有 DTD 声明的情况下，要求是这种写法，IE6、7、8 才能认出来。</p> <p>综合上面这两个，就诞生了一种兼容性的写法：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop <span class="token operator">||</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span> <span class="token comment">//方式一</span>
+
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop <span class="token operator">+</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span> <span class="token comment">//方式二</span>
+</code></pre></div><p>另外还有一种兼容性的写法：<code>window.pageYOffset</code> 和 <code>window.pageXOffset</code>。这种写法无视 DTD 的声明。这种写法支持的浏览器版本是：火狐/谷歌/ie9+。</p> <p>综合上面的几种写法，为了兼容，不管有没有 DTD，<strong>最终版的兼容性写法：</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>window<span class="token punctuation">.</span>pageYOffset <span class="token operator">||</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop <span class="token operator">||</span>
+  document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
+</code></pre></div><h3 id="判断是否已经-dtd-声明"><a href="#判断是否已经-dtd-声明" class="header-anchor">#</a> 判断是否已经 DTD 声明</h3> <p>方法如下：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>document<span class="token punctuation">.</span>compatMode <span class="token operator">===</span> <span class="token string">&quot;CSS1Compat&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 已声明</span>
+document<span class="token punctuation">.</span>compatMode <span class="token operator">===</span> <span class="token string">&quot;BackCompat&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 未声明</span>
+</code></pre></div><h3 id="将-scrolltop-和-scrollleft-进行封装"><a href="#将-scrolltop-和-scrollleft-进行封装" class="header-anchor">#</a> 将 scrollTop 和 scrollLeft 进行封装</h3> <p>这里，我们将 scrollTop 和 scrollLeft 封装为一个方法，名叫 scroll()，返回值为 一个对象。以后就直接调用<code>scroll().top</code> 和 <code>scroll().left</code>就好。</p> <p>代码实现：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+      <span class="token selector">body</span> <span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 6000px<span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 5000px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      <span class="token comment">//需求：封装一个兼容的scroll().返回的是对象，用scroll().top获取scrollTop，用scroll().left获取scrollLeft</span>
+
+      window<span class="token punctuation">.</span><span class="token function-variable function">onscroll</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//        var myScroll = scroll();</span>
+        <span class="token comment">//        myScroll.top;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>top<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+      <span class="token comment">//函数封装（简单封装，实际工作使用）</span>
+      <span class="token keyword">function</span> <span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          <span class="token comment">//此函数的返回值是对象</span>
+          <span class="token literal-property property">left</span><span class="token operator">:</span>
+            window<span class="token punctuation">.</span>pageYOffset <span class="token operator">||</span>
+            document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop <span class="token operator">||</span>
+            document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+          <span class="token literal-property property">right</span><span class="token operator">:</span>
+            window<span class="token punctuation">.</span>pageXOffset <span class="token operator">||</span>
+            document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft <span class="token operator">||</span>
+            document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>上方代码中，函数定义的那部分就是要封装的代码。</p> <p>另外还有一种比较麻烦的封装方式：（仅供参考）</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 开始封装自己的scrollTop</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>pageYOffset <span class="token operator">!==</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ie9+ 高版本浏览器</span>
+    <span class="token comment">// 因为 window.pageYOffset 默认的是  0  所以这里需要判断</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">left</span><span class="token operator">:</span> window<span class="token punctuation">.</span>pageXOffset<span class="token punctuation">,</span>
+      <span class="token literal-property property">top</span><span class="token operator">:</span> window<span class="token punctuation">.</span>pageYOffset<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>compatMode <span class="token operator">===</span> <span class="token string">&quot;CSS1Compat&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 标准浏览器   来判断有没有声明DTD</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">left</span><span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+      <span class="token literal-property property">top</span><span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 未声明 DTD</span>
+    <span class="token literal-property property">left</span><span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+    <span class="token literal-property property">top</span><span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="获取-html-文档的方法"><a href="#获取-html-文档的方法" class="header-anchor">#</a> 获取 html 文档的方法</h2> <p>获取 title、body、head、html 标签的方法如下：</p> <ul><li><p><code>document.title</code> 文档标题；</p></li> <li><p><code>document.head</code> 文档的头标签</p></li> <li><p><code>document.body</code> 文档的 body 标签；</p></li> <li><p><code>document.documentElement</code> （这个很重要）。</p></li></ul> <p><code>document.documentElement</code>表示文档的 html 标签。也就是说，基本结构当中的 <code>html 标签</code>而是通过<code>document.documentElement</code>访问的，并不是通过 document.html 去访问的。</p> <h2 id="scrolltop-举例-固定导航栏"><a href="#scrolltop-举例-固定导航栏" class="header-anchor">#</a> scrollTop 举例：固定导航栏</h2> <p>完整版代码实现：</p> <p>（1）index.html：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+      <span class="token selector">*</span> <span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector">img</span> <span class="token punctuation">{</span>
+        <span class="token property">vertical-align</span><span class="token punctuation">:</span> top<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector">.main</span> <span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 1000px<span class="token punctuation">;</span>
+        <span class="token property">margin-top</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector">#Q-nav1</span> <span class="token punctuation">{</span>
+        <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector">.fixed</span> <span class="token punctuation">{</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+        <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+        <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!--引入工具js--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tools.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      window<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//需求1：当我们滚动界面的时候，被卷曲的头部如果超过第二个盒子距离顶部的位置，那么直接给第二个盒子加类名.fixed</span>
+        <span class="token comment">//需求2：当我们滚动界面的时候，被卷曲的头部如果小于第二个盒子距离顶部的位置，那么直接给第二个盒子取消类名.fixed</span>
+
+        <span class="token comment">//1.老三步。</span>
+        <span class="token keyword">var</span> topDiv <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;top&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> height <span class="token operator">=</span> topDiv<span class="token punctuation">.</span>offsetHeight<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> middle <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;Q-nav1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> main <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;main&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        window<span class="token punctuation">.</span><span class="token function-variable function">onscroll</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">//2.判断 ，被卷曲的头部的大小</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>top <span class="token operator">&gt;</span> height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//3.满足条件添加类，否则删除类</span>
+            middle<span class="token punctuation">.</span>className <span class="token operator">+=</span> <span class="token string">&quot; fixed&quot;</span><span class="token punctuation">;</span>
+            <span class="token comment">//第二个盒子也要占位置，为了避免重叠，我们给第三个盒子一个上padding的空间，把这个空间留给第二个盒子</span>
+            main<span class="token punctuation">.</span>style<span class="token punctuation">.</span>paddingTop <span class="token operator">=</span> middle<span class="token punctuation">.</span>offsetHeight <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            middle<span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+            <span class="token comment">//清零</span>
+            main<span class="token punctuation">.</span>style<span class="token punctuation">.</span>paddingTop <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>top<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>top<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>images/top.png<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Q-nav1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>images/nav.png<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>main<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>main<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>images/main.png<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>上方代码中，有一个技巧：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>main<span class="token punctuation">.</span>style<span class="token punctuation">.</span>paddingTop <span class="token operator">=</span> middle<span class="token punctuation">.</span>offsetHeight <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>仔细看注释就好。</p> <p>（2）tools.js：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * Created by smyhvae on 2018/02/03.
+ */</span>
+<span class="token keyword">function</span> <span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 开始封装自己的scrollTop</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>pageYOffset <span class="token operator">!==</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ie9+ 高版本浏览器</span>
+    <span class="token comment">// 因为 window.pageYOffset 默认的是  0  所以这里需要判断</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">left</span><span class="token operator">:</span> window<span class="token punctuation">.</span>pageXOffset<span class="token punctuation">,</span>
+      <span class="token literal-property property">top</span><span class="token operator">:</span> window<span class="token punctuation">.</span>pageYOffset<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>compatMode <span class="token operator">===</span> <span class="token string">&quot;CSS1Compat&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 标准浏览器   来判断有没有声明DTD</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">left</span><span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+      <span class="token literal-property property">top</span><span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 未声明 DTD</span>
+    <span class="token literal-property property">left</span><span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+    <span class="token literal-property property">top</span><span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>实现效果：</p> <p><img src="http://img.smyhvae.com/20180203_1619.gif" alt=""></p> <p>~工程文件~：</p> <ul><li><p>2018-02-03-scrollTop 固定导航栏.rar</p></li> <li><p>下载链接暂无。</p></li></ul> <h2 id="缓动动画"><a href="#缓动动画" class="header-anchor">#</a> 缓动动画</h2> <h3 id="三个函数"><a href="#三个函数" class="header-anchor">#</a> 三个函数</h3> <p>缓慢动画里，我们要用到三个函数，这里先列出来：</p> <ul><li><p>Math.ceil() 向上取整</p></li> <li><p>Math.floor() 向下取整</p></li> <li><p>Math.round(); 四舍五入</p></li></ul> <h3 id="缓动动画的原理"><a href="#缓动动画的原理" class="header-anchor">#</a> 缓动动画的原理</h3> <p>缓动动画的原理就是：在移动的过程中，步长越来越小。</p> <p>设置步长为：<strong>目标位置和盒子当前位置的十分之一</strong>。用公式表达，即：</p> <div class="language- extra-class"><pre class="language-text"><code>    盒子位置 = 盒子本身位置 + (目标位置 - 盒子本身位置)/ 10；
+</code></pre></div><p>代码举例：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+      <span class="token selector">div</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>运动到left = 400px<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      <span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">&quot;button&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">&quot;div&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      btn<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">//动画原理：盒子未来的位置 = 盒子当前的位置+步长</span>
+          div<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> div<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">400</span> <span class="token operator">-</span> div<span class="token punctuation">.</span>offsetLeft<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>效果：</p> <p><img src="http://img.smyhvae.com/20180202_2046.gif" alt=""></p> <h3 id="缓慢动画的封装-解决四舍五入的问题"><a href="#缓慢动画的封装-解决四舍五入的问题" class="header-anchor">#</a> 缓慢动画的封装（解决四舍五入的问题）</h3> <p>我们发现一个问题，上图中的盒子最终并没有到达 400px 的位置，而是只到了 396.04px 就停住了：</p> <p><img src="http://img.smyhvae.com/20180202_2140.png" alt=""></p> <p>原因是：JS 在取整的运算时，进行了四舍五入。</p> <p>我们把打印 396.04px 这个 left 值打印出来看看：</p> <p><img src="http://img.smyhvae.com/20180202_2150.png" alt=""></p> <p>我么发现，通过<code>div.style.left</code>获取的值是精确的，通过<code>div.offsetLeft</code>获取的 left 值会进行四舍五入。</p> <p>此时，我们就要用到取整的函数了。</p> <p>通过对缓动动画进行封装，完整版的代码实现如下：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+      <span class="token selector">div</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+        <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>运动到200<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>运动到400<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      <span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">&quot;button&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">&quot;div&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      btn<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">animate</span><span class="token punctuation">(</span>div<span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+      btn<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">animate</span><span class="token punctuation">(</span>div<span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+      <span class="token comment">//缓动动画封装</span>
+      <span class="token keyword">function</span> <span class="token function">animate</span><span class="token punctuation">(</span><span class="token parameter">ele<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//要用定时器，先清定时器</span>
+        <span class="token comment">//一个萝卜一个坑儿，一个元素对应一个定时器</span>
+        <span class="token function">clearInterval</span><span class="token punctuation">(</span>ele<span class="token punctuation">.</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//定义定时器</span>
+        ele<span class="token punctuation">.</span>timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">//获取步长</span>
+          <span class="token comment">//步长应该是越来越小的，缓动的算法。</span>
+          <span class="token keyword">var</span> step <span class="token operator">=</span> <span class="token punctuation">(</span>target <span class="token operator">-</span> ele<span class="token punctuation">.</span>offsetLeft<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">;</span>
+          <span class="token comment">//对步长进行二次加工(大于0向上取整,小于0向下取整)</span>
+          <span class="token comment">//达到的效果是：最后10像素的时候都是1像素1像素的向目标位置移动，就能够到达指定位置。</span>
+          step <span class="token operator">=</span> step <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">?</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span> <span class="token operator">:</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token comment">//动画原理： 目标位置 = 当前位置 + 步长</span>
+          ele<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> ele<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> step <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token comment">//检测缓动动画有没有停止</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;smyhvae&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>target <span class="token operator">-</span> ele<span class="token punctuation">.</span>offsetLeft<span class="token punctuation">)</span> <span class="token operator">&lt;=</span> Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//处理小数赋值</span>
+            ele<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> target <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+            <span class="token function">clearInterval</span><span class="token punctuation">(</span>ele<span class="token punctuation">.</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>实现效果：</p> <p><img src="http://img.smyhvae.com/20180202_2239.gif" alt=""></p> <h2 id="window-scrollto-方法举例-返回到顶部小火箭"><a href="#window-scrollto-方法举例-返回到顶部小火箭" class="header-anchor">#</a> window.scrollTo()方法举例：返回到顶部小火箭</h2> <p>（1）index.html：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+      <span class="token selector">img</span> <span class="token punctuation">{</span>
+        <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+        <span class="token property">bottom</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">right</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+        <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+        <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+        <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #000<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token selector">div</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 1210px<span class="token punctuation">;</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 100px auto<span class="token punctuation">;</span>
+        <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+        <span class="token property">font</span><span class="token punctuation">:</span> 500 26px/35px <span class="token string">&quot;simsun&quot;</span><span class="token punctuation">;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tools.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      window<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//需求：被卷去的头部超过100显示小火箭，然后点击小火箭屏幕缓慢移动到最顶端。</span>
+        <span class="token comment">//难点：我们以前是移动盒子，现在是移动屏幕，我们没有学过如何移动屏幕。</span>
+        <span class="token comment">//      技术点：window.scrollTo(x,y);浏览器显示区域跳转到指定的坐标</span>
+        <span class="token comment">//步骤：</span>
+        <span class="token comment">//1.老三步</span>
+        <span class="token keyword">var</span> img <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">&quot;img&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        window<span class="token punctuation">.</span><span class="token function-variable function">onscroll</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">//被卷去的距离大于200显示小火箭，否则隐藏</span>
+          <span class="token comment">//2.显示隐藏小火箭</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>top <span class="token operator">&gt;</span> <span class="token number">1000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            img<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display <span class="token operator">=</span> <span class="token string">&quot;block&quot;</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            img<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display <span class="token operator">=</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token comment">//每次移动滚动条的时候都给leader赋值，模拟leader获取距离顶部的距离</span>
+          leader <span class="token operator">=</span> <span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>top<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token comment">//3.缓动跳转到页面最顶端（利用我们的缓动动画）</span>
+        <span class="token keyword">var</span> timer <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> target <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">//目标位置</span>
+        <span class="token keyword">var</span> leader <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">//显示区域自身的位置</span>
+        img<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">//技术点：window.scrollTo(0,0);</span>
+          <span class="token comment">//要用定时器，先清定时器</span>
+          <span class="token function">clearInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//获取步长</span>
+            <span class="token keyword">var</span> step <span class="token operator">=</span> <span class="token punctuation">(</span>target <span class="token operator">-</span> leader<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">;</span>
+            <span class="token comment">//二次处理步长</span>
+            step <span class="token operator">=</span> step <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">?</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span> <span class="token operator">:</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>step<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            leader <span class="token operator">=</span> leader <span class="token operator">+</span> step<span class="token punctuation">;</span> <span class="token comment">//往上移动的过程中，step是负数。当前位置减去步长，就等于下一步的位置。</span>
+            <span class="token comment">//显示区域移动</span>
+            window<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> leader<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//清除定时器</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>leader <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token function">clearInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>images/Top.jpg<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+      我是最顶端.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+      生命壹号，永不止步.....<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>（2）tools.js:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * Created by smyhvae on 2015/12/8.
+ */</span>
+
+<span class="token comment">//函数：获取scrollTop和scrollLeft的值</span>
+<span class="token keyword">function</span> <span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 开始封装自己的scrollTop</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>pageYOffset <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ie9+ 高版本浏览器</span>
+    <span class="token comment">// 因为 window.pageYOffset 默认的是  0  所以这里需要判断</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">left</span><span class="token operator">:</span> window<span class="token punctuation">.</span>pageXOffset<span class="token punctuation">,</span>
+      <span class="token literal-property property">top</span><span class="token operator">:</span> window<span class="token punctuation">.</span>pageYOffset<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>compatMode <span class="token operator">===</span> <span class="token string">&quot;CSS1Compat&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 标准浏览器   来判断有没有声明DTD</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">left</span><span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+      <span class="token literal-property property">top</span><span class="token operator">:</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 未声明 DTD</span>
+    <span class="token literal-property property">left</span><span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+    <span class="token literal-property property">top</span><span class="token operator">:</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>实现效果：</p> <p><img src="http://img.smyhvae.com/20180203_1710.gif" alt=""></p> <p>小火箭的图片资源：</p> <p><img src="http://img.smyhvae.com/20180203-Top.jpg" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/36-javascript.html" class="prev">
+        36-offset相关属性和匀速动画（含轮播图的实现）
+      </a></span> <span class="next"><a href="/javascript/38-javascript.html">
+        38-client（可视区）相关属性
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c4086290.js" defer></script><script src="/assets/js/2.2defd20b.js" defer></script><script src="/assets/js/46.28e3d709.js" defer></script>
+  </body>
+</html>
